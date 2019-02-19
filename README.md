@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 
-kishan is not the best
+kishan is - fuck off - he is hte best
 
 
 In the project directory, you can run:
