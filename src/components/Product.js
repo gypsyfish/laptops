@@ -13,20 +13,19 @@ export default class Product extends Component {
          <ProductConsumer>
            {(value) => (
              <div className="img-container p-5"
-          onClick={() => 
-          value.handleDetail(id)}
-          >
+              onClick={() => 
+              value.handleDetail(id)}
+              >
 
            <Link to="/details">
            <img  style={{height:"200px"}}src={img} alt="product" className="card-img-top" />
-           
            </Link>
+
            <button className="cart-btn" 
-           disabled={inCart ? true :false}
+              disabled={inCart ? true :false}
               onClick={() => {
                 value.addToCart(id);
                 value.openModal(id);
-              
               }}
               >
               {inCart ? (<p className="text-capitalize mb-0" disabled>
@@ -34,22 +33,22 @@ export default class Product extends Component {
                 in cart
                 </p>
               ) : (<i className="fas fa-cart-plus" />)}
-            </button>
+          </button>
          </div>)}
          
          </ProductConsumer>
          {/* card footer 8*/}
-         <div className="card-footer d-flex justify-content-between">
-           <p className="align-self-center mb-0">
-             {title}
-           </p>
-           <h5 className="text-blue font-italic mb-0">
-             <span className="mr-1">£</span>
-             {price}
-           </h5>
-         </div>
-         
-       </div>
+            <div className="card-footer d-flex justify-content-between">
+              <p className="align-self-center mb-0">
+                {title}
+              </p>
+              <h5 className="text-blue font-italic mb-0">
+                <span className="mr-1">£</span>
+                {price}
+              </h5>
+            </div>
+            
+          </div>
      </ProductWrapper>
     )
   }
